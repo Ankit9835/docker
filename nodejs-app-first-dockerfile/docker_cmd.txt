@@ -1,0 +1,12 @@
+docker build .
+docker ps
+docker run -p 3000:80 imageId
+docker restart container_name
+docker start -a sad_dhawan (attach_mode) console put shows
+docker log container_name
+docker log -f container_name
+docker run -it imageId i for interactive mode
+docker rm container_name
+docker images
+docker rmi image_name
+docker image prune
