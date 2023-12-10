@@ -6,7 +6,15 @@ docker start -a sad_dhawan (attach_mode) console put shows
 docker log container_name
 docker log -f container_name
 docker run -it imageId i for interactive mode
-docker rm container_name
+docker rm container_name - delete container_name
 docker images
-docker rmi image_name
-docker image prune
+docker rmi image_name - delete image_name
+docker image prune - it removes all the images
+docker stop container_name
+docker run -p 3000:80 -d --rm image_name - it automatically remove the container when the container stops 
+docker image inspect image_name - it inspect the image
+docker cp dummy/. wonderful_morse:/test - it copies the file from dummy folder to the specified container in a given directory
+docker cp wonderful_morse:/test dummy
+docker run -p 3000:80 --rm --name goalsapp image_name - create custom container_name for the specific image
+docker build -t goals:latest . - create own image name and image tag for a specific image
+docker run -p 3000:80 --rm --name goals goals:latest - it runs the container with the given image name
