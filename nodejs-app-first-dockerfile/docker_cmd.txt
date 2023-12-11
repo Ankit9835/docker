@@ -18,3 +18,5 @@ docker cp wonderful_morse:/test dummy
 docker run -p 3000:80 --rm --name goalsapp image_name - create custom container_name for the specific image
 docker build -t goals:latest . - create own image name and image tag for a specific image
 docker run -p 3000:80 --rm --name goals goals:latest - it runs the container with the given image name
+docker push ankitmernstack/node-hello-world - it push to the docker repository 
+docker tag goals:latest ankitmernstack/node-hello-world - it rename the image name
